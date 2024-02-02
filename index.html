@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary meta tags -->
+    <title>Wealthome</title>
+    <meta name="title" content="Wealthome">
+    <meta name="description" content="This is a realestate website developed by Amit">
+
+    <!-- Setting up favicon -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!-- Setting up google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Setting up google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Custom JS -->
+    <script src="./assets/js/script.js" defer></script>
+    
+</head>
+<body>
+    
+    <header>
+        <button>
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <img src="./assets/images/logo.png" alt="logo">
+            </a>
+            <div>
+                <ul class="navbar-list">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Rent</a>
+                    </li>
+                    <li>
+                        <a href="#">Sell</a>
+                    </li>
+                    <li>
+                        <a href="#">Buy</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                </ul>
+                <div class="navbar-wrapper">
+                    <a href="#">Login</a>
+                    <a href="#">Get Started</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <img class="pattern-img" src="./assets/images/bg-pattern.png" alt="Background Pattern">
+        <img class="hero_img" src="./assets/images/hero.png" alt="Building Image">
+        <div class="container">
+            <h1>Find a place where you can be yourself.</h1>
+            <p>If you're looking for a place where you can be yourself, don't give up. Keep searching until you find a place that feels like home.</p>
+            <form action="./" method="get">
+                <div class="options">
+                    <div>
+                        <label for="want">Want to</label>
+                        <span class="material-symbols-outlined" aria-hidden="true">real_estate_agent</span>
+                    </div>
+                    <select name="want" id="want">
+                        <option value="Buy">Buy</option>
+                        <option value="Sell">Sell</option>
+                        <option value="Rent">Rent</option>
+                    </select>
+                </div>
+                <div class="options">
+                    <div>
+                        <label for="property">Property type</label>
+                        <span class="material-symbols-outlined" aria-hidden="true">gite</span>
+                    </div>
+                    <select name="property" id="property">
+                        <option value="Any">Any</option>
+                        <option value="Houses">Houses</option>
+                        <option value="Apartments">Apartments</option>
+                        <option value="Villa">Villa</option>
+                        <option value="Bungalow">Bungalow</option>
+                        <option value="Loft">Loft</option>
+                    </select>
+                </div>
+                <div class="address">
+                    <div>
+                        <label for="location">Location</label>
+                        <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
+                    </div>
+                    <input type="text" id="location" placeholder="Street, City, Zip..." autocomplete="off">
+                </div>
+                <div class="submit">
+                    <label for="submit"><span class="material-symbols-outlined" aria-hidden="true">search</span></label>
+                    <button id="submit" type="submit">Search</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="areas">
+        <div class="heading">
+            <div class="info">
+                <h2>Best home in your city</h2>
+                <p>Lorem ipsum dolor sit amet consectetur. In quisque scelerisque eget id facilisis. Aliquam in libero egestas at.</p>
+            </div>
+            <div class="blue-button">
+                <button>Explore more</button>
+                <span class="material-symbols-outlined" aria-hidden="true">arrow_outward</span>
+            </div>
+        </div>
+        <div class="homes">
+            <div class="home">
+                <span class="new">New</span>
+                <span class="material-symbols-outlined favourite" aria-hidden="true">favorite</span>
+                <div class="box">
+                    <img src="./assets/images/property-1.jpg" alt="COVA Home Realty">
+                </div>
+                <div class="specs">
+                    <span>$710.68</span>
+                    <span>COVA Home Realty</span>
+                    <span>1901 Thornridge Cir. Shiloh, Hawaii 81063</span>
+                </div>
+                <div class="features">
+                    <div>
+                        <span class="material-symbols-outlined meta-icon" aria-hidden="true">bed</span>
+                        <span>3 Bed</span>
+                    </div>
+                    <div>
+                        <span class="material-symbols-outlined meta-icon" aria-hidden="true">bathtub</span>
+                        <span>2 Bath</span>
+                    </div>
+                    <div>
+                        <span class="material-symbols-outlined meta-icon" aria-hidden="true">straighten</span>
+                        <span>1430 sqft</span>
+                    </div>
+                </div>
+            </div>
+            <div class="home">
+                <span class="material-symbols-outlined favourite" aria-hidden="true">favorite</span>
+                <div class="box">
+                    <img src="./assets/images/property-2.jpg" alt="Exit Realty">
+                </div>
+                <div class="specs">
+                    <span>$630.44</span>
+                    <span>Exit Realty</span>
+                    <span>2972 Westheimer Rd. Santa Ana, Illinois 85486</span>
+                </div>
+                <div class="features">
+                    <div>
+                        <span class="material-symbols-outlined meta-icon" aria-hidden="true">bed</span>
+                        <span>5 Bed</span>
+                    </div>
+                    <div>
+                        <span class="material-symbols-outlined meta-icon" aria-hidden="true">bathtub</span>
+                        <span>4 Bath</span>
+                    </div>
+                    <div>
+                        <span class="material-symbols-outlined meta-icon" aria-hidden="true">straighten</span>
+                        <span>1630 sqft</span>
+                    </div>
+                </div>
+            </div>
+            <div class="home">
+                <span class="material-symbols-outlined favourite" aria-hidden="true">favorite</span>
+                <div class="box">
+                    <img src="./assets/images/property-3.jpg" alt="The Real Estate Group">
+                </div>
+                <div class="specs">
+                    <span>$475.22</span>
+                    <span>The Real Estate Group</span>
+                    <span>2118 Thornridge Cir. Syracuse, Connecticut 35624</span>
+                </div>
+                <div class="features">
+                    <div>
+                        <span class="material-symbols-outlined meta-icon" aria-hidden="true">bed</span>
+                        <span>8 Bed</span>
+                    </div>
+                    <div>
+                        <span class="material-symbols-outlined meta-icon" aria-hidden="true">bathtub</span>
+                        <span>5 Bath</span>
+                    </div>
+                    <div>
+                        <span class="material-symbols-outlined meta-icon" aria-hidden="true">straighten</span>
+                        <span>1240 sqft</span>
+                    </div>
+                </div>
+            </div>
+            <div class="home">
+                <span class="material-symbols-outlined favourite" aria-hidden="true">favorite</span>
+                <div class="box">
+                    <img src="./assets/images/property-4.jpg" alt="757 Realty">
+                </div>
+                <div class="specs">
+                    <span>$576.28</span>
+                    <span>757 Realty</span>
+                    <span>4140 Parker Rd. Allentown, New Mexico 31134</span>
+                </div>
+                <div class="features">
+                    <div>
+                        <span class="material-symbols-outlined meta-icon" aria-hidden="true">bed</span>
+                        <span>6 Bed</span>
+                    </div>
+                    <div>
+                        <span class="material-symbols-outlined meta-icon" aria-hidden="true">bathtub</span>
+                        <span>6 Bath</span>
+                    </div>
+                    <div>
+                        <span class="material-symbols-outlined meta-icon" aria-hidden="true">straighten</span>
+                        <span>1260 sqft</span>
+                    </div>
+                </div>
+            </div>
+            <div class="home">
+                <span class="material-symbols-outlined favourite" aria-hidden="true">favorite</span>
+                <div class="box">
+                    <img src="./assets/images/property-5.jpg" alt="Beach Pros Realty Inc.">
+                </div>
+                <div class="specs">
+                    <span>$473.85</span>
+                    <span>Beach Pros Realty Inc.</span>
+                    <span>2715 Ash Dr. San Jose, South Dakota 83475</span>
+                </div>
+                <div class="features">
+                    <div>
+                        <span class="material-symbols-outlined meta-icon" aria-hidden="true">bed</span>
+                        <span>10 Bed</span>
+                    </div>
+                    <div>
+                        <span class="material-symbols-outlined meta-icon" aria-hidden="true">bathtub</span>
+                        <span>8 Bath</span>
+                    </div>
+                    <div>
+                        <span class="material-symbols-outlined meta-icon" aria-hidden="true">straighten</span>
+                        <span>2350 sqft</span>
+                    </div>
+                </div>
+            </div>
+            <div class="home">
+                <span class="material-symbols-outlined favourite" aria-hidden="true">favorite</span>
+                <div class="box">
+                    <img src="./assets/images/property-6.jpg" alt="Keller Williams Elite Town Center">
+                </div>
+                <div class="specs">
+                    <span>$105.55</span>
+                    <span>Keller Williams Elite Town Cent..</span>
+                    <span>3517 W. Gray St. Utica, Pennsylvania 57867</span>
+                </div>
+                <div class="features">
+                    <div>
+                        <span class="material-symbols-outlined meta-icon" aria-hidden="true">bed</span>
+                        <span>8 Bed</span>
+                    </div>
+                    <div>
+                        <span class="material-symbols-outlined meta-icon" aria-hidden="true">bathtub</span>
+                        <span>8 Bath</span>
+                    </div>
+                    <div>
+                        <span class="material-symbols-outlined meta-icon" aria-hidden="true">straighten</span>
+                        <span>1950 sqft</span>
+                    </div>
+                </div>
+            </div>
+            <div class="home">
+                <span class="material-symbols-outlined favourite" aria-hidden="true">favorite</span>
+                <div class="box">
+                    <img src="./assets/images/property-7.jpg" alt="All Pros Real Estate">
+                </div>
+                <div class="specs">
+                    <span>$739.65</span>
+                    <span>All Pros Real Estate</span>
+                    <span>8502 Preston Rd. Inglewood, Maine 98380</span>
+                </div>
+                <div class="features">
+                    <div>
+                        <span class="material-symbols-outlined meta-icon" aria-hidden="true">bed</span>
+                        <span>4 Bed</span>
+                    </div>
+                    <div>
+                        <span class="material-symbols-outlined meta-icon" aria-hidden="true">bathtub</span>
+                        <span>4 Bath</span>
+                    </div>
+                    <div>
+                        <span class="material-symbols-outlined meta-icon" aria-hidden="true">straighten</span>
+                        <span>1580 sqft</span>
+                    </div>
+                </div>
+            </div>
+            <div class="home">
+                <span class="material-symbols-outlined favourite" aria-hidden="true">favorite</span>
+                <div class="box">
+                    <img src="./assets/images/property-8.jpg" alt="FIT Realty">
+                </div>
+                <div class="specs">
+                    <span>$948.55</span>
+                    <span>FIT Realty</span>
+                    <span>4517 Washington Ave. Manchester, Kentucky 39495</span>
+                </div>
+                <div class="features">
+                    <div>
+                        <span class="material-symbols-outlined meta-icon" aria-hidden="true">bed</span>
+                        <span>3 Bed</span>
+                    </div>
+                    <div>
+                        <span class="material-symbols-outlined meta-icon" aria-hidden="true">bathtub</span>
+                        <span>2 Bath</span>
+                    </div>
+                    <div>
+                        <span class="material-symbols-outlined meta-icon" aria-hidden="true">straighten</span>
+                        <span>1120 sqft</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="feature">
+        <div class="img1">
+            <img src="./assets/images/feature-banner-1.jpg" alt="fearture banner">
+        </div>
+        <div class="feature1">
+            <h3>We Specialize In Quality Home Renovations</h3>
+            <p>Looking to renovate your home to reflect your style and personality? Look no further than our team of experts who specialize in quality home renovations to transform your space into a dream home you’ll love. From design to execution.</p>
+            <div>
+                <div>
+                    <span class="material-symbols-outlined" aria-hidden="true">check_circle</span>
+                    <span>Smart Home</span>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined" aria-hidden="true">check_circle</span>
+                    <span>Beautiful Scene Around</span>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <span class="material-symbols-outlined" aria-hidden="true">check_circle</span>
+                    <span>Exceptional lifestyle</span>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined" aria-hidden="true">check_circle</span>
+                    <span>Complete 24/7 Security</span>
+                </div>
+            </div>
+        </div>
+        <div class="feature1">
+            <h3>We Are Experts In Historic Home Renovations</h3>
+            <p>Looking to renovate your home to reflect your style and personality? Look no further than our team of experts who specialize in quality home renovations to transform your space into a dream home you’ll love. From design to execution.</p>
+            <div>
+                <div>
+                    <span class="material-symbols-outlined" aria-hidden="true">check_circle</span>
+                    <span>Smart Home</span>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined" aria-hidden="true">check_circle</span>
+                    <span>Beautiful Scene Around</span>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <span class="material-symbols-outlined" aria-hidden="true">check_circle</span>
+                    <span>Exceptional lifestyle</span>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined" aria-hidden="true">check_circle</span>
+                    <span>Complete 24/7 Security</span>
+                </div>
+            </div>
+        </div>
+        <div class="img1">
+            <img src="./assets/images/feature-banner-2.jpg" alt="fearture banner">
+        </div>
+    </section>
+    
+    <section id="video">
+        <div>
+            <span class="material-icons" aria-hidden="true" aria-label = "play video">play_arrow</span>
+        </div>
+    </section>
+
+    <section id="story">
+        <div class="story-heading">
+            <div class="heading">
+                <span>Our Customers</span>
+                <h4>We Help 1000+ Family Find Their True Home</h4>
+                <div class="avatars">
+                    <div>
+                        <img src="./assets/images/avatar-1.jpg" alt="avatar image">
+                    </div>
+                    <div>
+                        <img src="./assets/images/avatar-2.jpg" alt="avatar image">
+                    </div>
+                    <div>
+                        <img src="./assets/images/avatar-3.jpg" alt="avatar image">
+                    </div>
+                    <div>
+                        <span>99+</span>
+                    </div>
+                </div>
+            </div>
+            <div class="blue-button">
+                <button>View All Stories</button>
+                <span class="material-symbols-outlined" aria-hidden="true">arrow_outward</span>
+            </div>
+        </div>
+        <div class="stories">
+            <div class="story1 story">
+                <div>
+                    <span>Chris Traeger</span>
+                    <div>
+                        <span class="material-icons" aria-hidden="true">star</span>
+                        <span class="material-icons" aria-hidden="true">star</span>
+                        <span class="material-icons" aria-hidden="true">star</span>
+                        <span class="material-icons" aria-hidden="true">star</span>
+                        <span class="material-icons" aria-hidden="true">star</span>
+                        <span>5.0</span>
+                    </div>
+                </div>
+                <img src="./assets/images/story-avatar-1.jpg" alt="Chris Traeger">
+            </div>
+            <div class="story2">
+                <div>
+                    <span>Duke Silver</span>
+                    <div>
+                        <span class="material-icons" aria-hidden="true">star</span>
+                        <span class="material-icons" aria-hidden="true">star</span>
+                        <span class="material-icons" aria-hidden="true">star</span>
+                        <span class="material-icons" aria-hidden="true">star</span>
+                        <span class="material-icons" aria-hidden="true">star</span>
+                        <span>5.0</span>
+                    </div>
+                </div>
+                <img src="./assets/images/story-avatar-2.jpg" alt="Duke Silver">
+            </div>
+            <div class="story3">
+                <div>
+                    <span>Tsukasa Aoi</span>
+                    <div>
+                        <span class="material-icons" aria-hidden="true">star</span>
+                        <span class="material-icons" aria-hidden="true">star</span>
+                        <span class="material-icons" aria-hidden="true">star</span>
+                        <span class="material-icons" aria-hidden="true">star</span>
+                        <span class="material-icons" aria-hidden="true">star</span>
+                        <span>5.0</span>
+                    </div>
+                </div>
+                <img src="./assets/images/story-avatar-3.jpg" alt="Tsukasa Aoi">
+            </div>
+            <div class="story4">
+                <div>
+                    <span>Freida Varnes</span>
+                    <div>
+                        <span class="material-icons" aria-hidden="true">star</span>
+                        <span class="material-icons" aria-hidden="true">star</span>
+                        <span class="material-icons" aria-hidden="true">star</span>
+                        <span class="material-icons" aria-hidden="true">star</span>
+                        <span class="material-icons" aria-hidden="true">star</span>
+                        <span>5.0</span>
+                    </div>
+                </div>
+                <img src="./assets/images/story-avatar-4.jpg" alt="Freida Varnes">
+            </div>
+            <div class="story5">
+                <div>
+                    <span>Carl Lorthner</span>
+                    <div>
+                        <span class="material-icons" aria-hidden="true">star</span>
+                        <span class="material-icons" aria-hidden="true">star</span>
+                        <span class="material-icons" aria-hidden="true">star</span>
+                        <span class="material-icons" aria-hidden="true">star</span>
+                        <span class="material-icons" aria-hidden="true">star</span>
+                        <span>5.0</span>
+                    </div>
+                </div>
+                <img src="./assets/images/story-avatar-5.jpg" alt="Carl Lorthner">
+            </div>
+            <div class="story6">
+                <div>
+                    <span>Marci Senter</span>
+                    <div>
+                        <span class="material-icons" aria-hidden="true">star</span>
+                        <span class="material-icons" aria-hidden="true">star</span>
+                        <span class="material-icons" aria-hidden="true">star</span>
+                        <span class="material-icons" aria-hidden="true">star</span>
+                        <span class="material-icons" aria-hidden="true">star</span>
+                        <span>5.0</span>
+                    </div>
+                </div>
+                <img src="./assets/images/story-avatar-6.jpg" alt="Marci Senter">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="branding">
+                <a href="#" class="logo"><img src="./assets/images/logo.png" alt="logo"></a>
+                <p>Lorem ipsum dolor sit amet consectetur. Non bibendum sit non congue pharetra pulvinar leo. Sed ut amet ipsum.</p>
+            </div>
+            <nav class="quick-support">
+                <span>Quick link</span>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Buy</a></li>
+                    <li><a href="#">Sell</a></li>
+                    <li><a href="#">Rent</a></li>
+                </ul>
+            </nav>
+            <nav class="quick-support">
+                <span>Support</span>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </nav>
+            <div class="extras">
+                <span>Get in touch</span>
+                <div>
+                    <span>hello@wealthome.com</span>
+                </div>
+                <div>
+                    <span>4140 Parker Rd. Allentown, New Mexico 31134</span>
+                </div>
+                <div>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <span>Copyright 2024 Code With Amit</span>
+    </footer>
+
+</body>
+</html>
